@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>HTML5 WebView</title>
+    <style type="text/css">
+            *{
+            margin: 0;
+            padding: 0;
+            }
+            #restart-btn{
+            width: 200px !important;
+            height: 50px !important;
+            margin-left: calc(25vw);
+            margin-top: 20px;
+            background-color: #6200EE;
+            color: white;
+            }
+            .btn{
+            width: 130px;
+            height: 130px;
+            margin-left: calc(30vw - 70px);
+            margin-top: 25px;
+            cursor: pointer;
+            }
+            button{
+            border: none;
+            outline:none;
+            font-size: medium;
+            border-radius: 2px;
+            color: white;
+            display:block;
+            }
+            .hide-btn{
+            background-color:red;
+            width: 130px;
+            height: 130px;
+            margin-left: calc(30vw - 70px);
+            margin-top: 25px;
+            cursor: pointer;
+            visibility: hidden;
+            }
+            #progress-txt{
+            margin-left: calc(10vw);
+            margin-top: 30px;
+            font-size: 20px;
+            }
+        </style>
+    <script type="text/javascript" src="file:///android_asset/index.js" ></script>
+</head>
+<body>
+<div id="screen">
+    <button id="restart-btn" onclick="start()">
+        Restart
+    </button>
+    <table>
+        <tr>
+            <td>
+                <button id=b1 class="btn" onclick="onBtnClick('1')" style="background-color: #f9a825">
+                    1
+                </button>
+            </td>
+            <td>
+                <button id=b2 class="btn" onclick="onBtnClick('2')" style="background-color: #558b2f">
+                    2
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id=b3 class="btn" onclick="onBtnClick('3')" style="background-color: #1565c0">
+                    3
+                </button>
+            </td>
+            <td>
+                <button id=b4 class="btn" onclick="onBtnClick('4')" style="background-color: #c0ca33">
+                    4
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id=b5 class="btn" onclick="onBtnClick('5')" style="background-color: #00acc1">
+                    5
+                </button>
+            </td>
+            <td>
+                <button id=b6 class="btn" onclick="onBtnClick('6')"style="background-color: #ad1457">
+                    6
+                </button>
+            </td>
+        </tr>
+    </table>
+    <div style="margin-top: 30px">
+        <span id="progress-txt">Progresso:</span>
+        <progress id="progress-bar" value="0" max="100"></progress>
+    </div>
+</div>
+</body>
+</html>

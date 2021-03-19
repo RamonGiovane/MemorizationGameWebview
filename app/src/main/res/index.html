@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>HTML5 WebView</title>
+    <style type="text/css">
+         *{
+             margin: 0;
+             padding: 0;
+         }
+         button{
+             width: 100px;
+             height: 40px;
+             position: absolute;
+             left: calc(50vw - 50px);
+             top: calc(50vh - 20px);
+             cursor: pointer;
+         }
+    </style>
+    </head>
+    <body>
+    <button onclick="Android.androidToast('Olá!')">
+        Toast
+    </button>
+    <script type="text/javascript">
+     function oculta_botao(){
+        document.querySelector('button').style.display = 'none';
+     }
+     </script>
+</body>
+</html>
