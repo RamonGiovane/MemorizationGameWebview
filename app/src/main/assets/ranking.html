@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="file:///android_asset/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <meta charset="utf-8">
+    <title>Ranking</title>
+    <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            div{
+                margin: 40px;
+                font-size: larger;
+            }
+            h3{
+                margin: 20px;
+            }
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:145px;
+	right:10vw;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+}
+#clear-btn{
+    bottom: 40px;
+}
+
+#change-btn{
+    bottom: 100px;
+}
+
+#continue-btn{
+    bottom: 160px;
+}
+.my-float{
+	margin-top:82px;
+
+
+}
+a{
+
+      font-size: 35px;
+      margin-top: 30px;
+      vertical-align: middle;
+
+}
+    </style>
+</head>
+<body>
+    <h3 id="title">Rankings (por pontuação)</h3>
+    <div>
+        <ol id="ranking">
+        </ol>
+    </div>
+    <a href="index.html"  id="continue-btn"  class="float">
+        <i class="fa fa-play"></i>
+    </a>
+    <a id="change-btn" class="float">
+        <i class="fa fa-trophy"></i>
+    </a>
+    <a id="clear-btn" class="float">
+        <i class="fa fa-trash"></i>
+    </a>
+</body>
+<script type="text/javascript" src="file:///android_asset/ranking.js"></script>
+</html>
